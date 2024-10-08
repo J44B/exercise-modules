@@ -8,8 +8,8 @@ export async function fetchProducts() {
   try {
     const response = await fetch(productsUrl);
     if (!response.ok) throw new Error('Request of products failed');
-    const products = await response.json();
-    console.log(products);
+    const productArray = await response.json();
+    displayProducts(productArray);
   } catch (error) {
     console.error(error);
   }
