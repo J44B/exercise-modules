@@ -9,7 +9,7 @@
   <body id="body" class="">
     <header
       id="header"
-      class="mx-auto max-w-6xl border-b-2 border-l-2 border-r-2 border-orange-900 rounded shadow shadow-slate-600 bg-orange-300"
+      class="flex flex-row justify-around items-end mx-auto max-w-6xl border-b-2 border-l-2 border-r-2 border-orange-900 rounded shadow shadow-slate-600 bg-orange-300"
     >
       <a href="#">
         <img
@@ -19,7 +19,14 @@
           alt="The Fakey Logo"
         />
       </a>
-      <nav id="navigation"></nav>
+      <nav>
+        <ul id="navigation" class="flex flex-row justify-around my-8">
+          <li><p class="p-4 mx-4">Kategorien</p></li>
+          <li><p class="p-4 mx-4">Zufällige Produkte</p></li>
+          <li><p class="p-4 mx-4">Einkaufswagen</p></li>
+          <li><p class="p-4 mx-4">Anmelden</p></li>
+        </ul>
+      </nav>
     </header>
 
     <main id="main" class="mx-auto max-w-6xl">
