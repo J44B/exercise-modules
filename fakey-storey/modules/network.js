@@ -9,7 +9,7 @@ export async function fetchProducts() {
     const response = await fetch(productsUrl);
     if (!response.ok) throw new Error('Request of products failed');
     const products = await response.json();
-    displayProducts(products);
+    return products;
   } catch (error) {
     console.error(error);
   }
