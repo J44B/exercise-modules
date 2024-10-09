@@ -1,7 +1,4 @@
 // import functions
-import { fetchProducts, displayProducts } from './modules/index.js';
+import { fetchProducts } from './modules/index.js';
 
-// Call functions
-
-fetchProducts();
-displayProducts();
+console.log(await fetchProducts());
